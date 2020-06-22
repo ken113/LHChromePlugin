@@ -1,0 +1,27 @@
+#gongshi{
+
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background: #3a8ee6;
+    color:#fff;
+    cursor: pointer;
+}
+
+#abc{
+
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border:1px solid #ccc;
+    background: #fff;
+    top:50%;
+    left:50%;
+    margin-left: -200px;
+    margin-top: -200px;
+
+}

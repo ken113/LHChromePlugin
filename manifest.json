@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "LHChromePlgin",
+    "version": "1.0",
+    "description": "This plugin for lh.",
+    "icons": {
+        "16": "dodotour_favicon.ico",
+        "48": "dodotour_favicon.ico",
+        "128": "dodotour_favicon.ico"
+    },
+    "browser_action": {
+        "default_icon": "dodotour_favicon.ico",
+        "default_title": "transform remark",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "page": "background.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "js/jquery-1.9.1.min.js",
+                "js/js.js"
+            ],
+            "css": [
+                "css/custom.css"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ]
+}
