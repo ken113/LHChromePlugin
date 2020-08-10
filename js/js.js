@@ -8,3 +8,10 @@
 
 
 })();
+
+
+function preText(str) {
+
+    str = str.replace(/\s{2,}/g, ' ');
+
+}
